@@ -1,0 +1,30 @@
+[
+  {
+    "device_id": "6287822512610@s.whatsapp.net",
+    "event": "message.ack",
+    "payload": {
+      "chat_id": "6282392115909@s.whatsapp.net",
+      "from": "6282392115909@s.whatsapp.net",
+      "ids": [
+        "3EB0861D7B422EB5A1B971"
+      ],
+      "receipt_type": "delivered",
+      "receipt_type_description": "means the message was delivered to the device (but the user might not have noticed)."
+    },
+    "timestamp": "2026-01-08T15:54:32Z"
+  },
+  {
+    "device_id": "6288708780312@s.whatsapp.net",
+    "event": "message.ack",
+    "payload": {
+      "chat_id": "6282392115909@s.whatsapp.net",
+      "from": "6282392115909@s.whatsapp.net",
+      "ids": [
+        "3EB0DC4C8DD80DFA2F695B"
+      ],
+      "receipt_type": "delivered",
+      "receipt_type_description": "means the message was delivered to the device (but the user might not have noticed)."
+    },
+    "timestamp": "2026-01-08T15:54:52Z"
+  }
+]

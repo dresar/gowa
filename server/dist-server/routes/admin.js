@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { requireAuth } from "../middleware/auth";
+import { listAutoReplyHandler, addAutoReplyHandler, deleteAutoReplyHandler, listWebhookEventsHandler, clearWebhookEventsHandler } from "../controllers/adminController";
+const router = Router();
+router.get("/admin/auto-reply", requireAuth, listAutoReplyHandler);
+router.post("/admin/auto-reply", requireAuth, addAutoReplyHandler);
+router.delete("/admin/auto-reply/:id", requireAuth, deleteAutoReplyHandler);
+router.get("/admin/webhook-events", requireAuth, listWebhookEventsHandler);
+router.delete("/admin/webhook-events", requireAuth, clearWebhookEventsHandler);
+export default router;

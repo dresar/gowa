@@ -1,0 +1,12 @@
+import { Router } from "express";
+import { requireAuth } from "../middleware/auth";
+import { sendTextHandler, sendLinkHandler, revokeMessageHandler, deleteMessageHandler, reactToMessageHandler, editMessageHandler, starMessageHandler } from "../controllers/messagesController";
+const router = Router();
+router.post("/send/message", requireAuth, sendTextHandler);
+router.post("/send/link", requireAuth, sendLinkHandler);
+router.post("/message/revoke", requireAuth, revokeMessageHandler);
+router.post("/message/delete", requireAuth, deleteMessageHandler);
+router.post("/message/react", requireAuth, reactToMessageHandler);
+router.post("/message/update", requireAuth, editMessageHandler);
+router.post("/message/star", requireAuth, starMessageHandler);
+export default router;

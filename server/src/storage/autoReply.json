@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "id": "b08a9263-70d1-4635-b82c-e104e87ddf68",
+      "contains": "biasa",
+      "reply": "apalah"
+    },
+    {
+      "id": "ec596c60-dd19-4b80-a68e-eaa082e1f511",
+      "contains": "halo",
+      "reply": "halo juga"
+    },
+    {
+      "id": "1ce70f3f-ea0b-4ffb-beeb-53394e3a6901",
+      "contains": "p",
+      "reply": "iya ada apa "
+    }
+  ],
+  "settings": {
+    "globalEnabled": true,
+    "disabledDevices": [],
+    "disabledNumbers": []
+  }
+}

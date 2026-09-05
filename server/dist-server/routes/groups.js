@@ -1,0 +1,18 @@
+import { Router } from "express";
+import { requireAuth } from "../middleware/auth";
+import { myGroupsHandler, groupInfoHandler, groupParticipantsHandler, createGroupHandler, addGroupParticipantsHandler, removeGroupParticipantsHandler, promoteParticipantsHandler, demoteParticipantsHandler, updateGroupSubjectHandler, updateGroupDescriptionHandler, getGroupInviteLinkHandler, revokeGroupInviteLinkHandler, leaveGroupHandler } from "../controllers/groupsController";
+const router = Router();
+router.get("/user/my/groups", requireAuth, myGroupsHandler);
+router.get("/group/:groupId", requireAuth, groupInfoHandler);
+router.get("/group/:groupId/participants", requireAuth, groupParticipantsHandler);
+router.post("/group", requireAuth, createGroupHandler);
+router.post("/group/:groupId/participants", requireAuth, addGroupParticipantsHandler);
+router.delete("/group/:groupId/participants", requireAuth, removeGroupParticipantsHandler);
+router.post("/group/:groupId/admin/promote", requireAuth, promoteParticipantsHandler);
+router.post("/group/:groupId/admin/demote", requireAuth, demoteParticipantsHandler);
+router.put("/group/:groupId/subject", requireAuth, updateGroupSubjectHandler);
+router.put("/group/:groupId/description", requireAuth, updateGroupDescriptionHandler);
+router.get("/group/:groupId/invite-link", requireAuth, getGroupInviteLinkHandler);
+router.post("/group/:groupId/invite-link/revoke", requireAuth, revokeGroupInviteLinkHandler);
+router.post("/group/:groupId/leave", requireAuth, leaveGroupHandler);
+export default router;

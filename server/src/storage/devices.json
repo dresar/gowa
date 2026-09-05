@@ -1,0 +1,20 @@
+[
+  {
+    "id": "wa1",
+    "name": "wa1",
+    "specs": {
+      "platform": "Wa 1",
+      "manufacturer": "Tecno",
+      "model": ""
+    },
+    "status": "active",
+    "schedules": [
+      {
+        "day": "Everyday",
+        "startTime": "08:00",
+        "endTime": "17:00"
+      }
+    ],
+    "lastUpdated": "2026-01-08T15:35:49.988Z"
+  }
+]
